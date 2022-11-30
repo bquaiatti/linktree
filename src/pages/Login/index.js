@@ -40,14 +40,14 @@ export default function Login() {
       <form className="form" onSubmit={handleLogin}>
         <Input
           type="email"
-          placeholder="your email address"
+          placeholder="email address (bruno@test.com)"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
 
         <Input
           type="password"
-          placeholder="*********"
+          placeholder="password (123456)"
           autoComplete="on"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
