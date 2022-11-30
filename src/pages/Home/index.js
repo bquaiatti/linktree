@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { db } from "../../services/firebaseConnection";
 
+
 import "./home.css";
 
 import { getDocs, collection, orderBy, query } from "firebase/firestore";
@@ -35,7 +36,6 @@ export default function Home() {
     <div className="home-container">
       <h1>Home</h1>
       <span>See my links 👇</span>
-
       <main className="links">
         {links.map((item) => (
           <section
